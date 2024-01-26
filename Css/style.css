@@ -1,0 +1,12 @@
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--cardwidth:1000px}
+h2,h3{color:#000}
+.main{background-color:#000;height:100vh; overflow: hidden;}
+.sideMenu{position:relative;color:#fff}
+.main .icon{background-color:#fff;height:100vh;color:#000;font-size:20px;cursor:pointer;padding-block:15px}
+.main .sidemenulogo{width:50px;height:60px}
+.main .menu{background-color:#000;height:100vh;width:300px}
+.links ul{list-style-type:none}
+.links ul li{display:block;color:#fff;padding-bottom:10px;cursor:pointer;font-size:17px}
+.links{margin-top:30px;font-size:20px}
+.mainFooter{position:absolute;bottom:0;padding:30px;font-size: 15px;text-align: center;}
