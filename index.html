@@ -24,43 +24,68 @@
     <!-- &======================style===========================================& -->
     <link rel="stylesheet" href="Css/mediaqueries.css" />
     <link rel="stylesheet" href="Css/style.css" />
+
     <!-- ======================================================================= -->
   </head>
   <body>
     <!-- ~===================>>>>>>>>>Main================================== -->
-    <div class="main d-flex align-items-center justify-content-between">
-      <div class="sideMenu d-flex align-items-center justify-content-between">
-        <div class="menu">
-          <div class="links">
-            <ul>
-              <li>Search</li>
-              <li>Categories</li>
-              <li>Area</li>
-              <li>Ingredients</li>
-              <li>Contact Us</li>
-            </ul>
-            <div class="mainFooter">
-              <div class="footericon">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-solid fa-globe"></i>
-                <i class="fa-brands fa-twitter"></i>
+    <div class="master">
+      <div class="masterSideMenu">
+        <div class="main d-flex align-items-center justify-content-between">
+          <div
+            class="sideMenu d-flex align-items-center justify-content-between"
+          >
+            <div class="menu d-none">
+              <div class="links">
+                <ul>
+                  <li>
+                    <a
+                      href="#"
+                      onclick="loadPage('./Pages/Search.html', 'pageContent')"
+                      >Search</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      onclick="loadPage('./Pages/Categories.html', 'pageContent')"
+                      >Categories</a
+                    >
+                  </li>
+                  <li> <a
+                    onclick="loadPage('./Pages/Area.html', 'pageContent')"
+                    >Area</a
+                  ></li>
+                  <li>Ingredients</li>
+                  <li>Contact Us</li>
+                </ul>
+                <div class="mainFooter">
+                  <div class="footericon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-solid fa-globe"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                  </div>
+                  Cpyright Â© 2019 All Rights Reserved.
+                </div>
               </div>
-              Cpyright Â© 2019 All Rights Reserved.
+            </div>
+            <div
+              class="icon d-flex flex-column justify-content-between align-items-center"
+            >
+              <img class="sidemenulogo" src="./images/logo.png" alt="" />
+              <div class="closesideMunu">
+                <i class="fa-solid fa-bars" id="closesideMunuIcon"></i>
+              </div>
+              <div class="linksicon">
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+              </div>
             </div>
           </div>
         </div>
-        <div
-          class="icon m-4 d-flex flex-column justify-content-between align-items-center"
-        >
-          <img class="sidemenulogo" src="./images/logo.png" alt="" />
-          <div class="close">
-            <i class="fa-solid fa-bars pe-2"></i>
-          </div>
-          <div class="linksicon">
-            <i class="fa-solid fa-globe d-block"></i>
-            <i class="fa-solid fa-share-nodes"></i>
-          </div>
-        </div>
+      </div>
+      <div class="pageContent mt-2" id="pageContent">
+        <div></div>
       </div>
     </div>
     <!-- ~===================>>>>>>>>>>End Main============================== -->
@@ -69,6 +94,7 @@
     <script src="JS/bootstrap.bundle.min.js"></script>
     <script src="JS/jquery-3.7.1.min.js"></script>
     <script src="JS/site.js" type="text/javascript" defer></script>
+ 
     <!--? ===================================== -->
   </body>
 </html>
