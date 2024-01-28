@@ -5,7 +5,7 @@ let searchResult = document.getElementById("searchResult");
 // ^=========================>>>function=========================== 
 async function searchInputbyLetterFun(searchParam) {
     searchResult.innerHTML = "";
-
+    console.log(`https://www.themealdb.com/api/json/v1/1/search.php?f=${searchParam}`);
     const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${searchParam}`);
     const data = await response.json();
     console.log("data");

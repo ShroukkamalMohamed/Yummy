@@ -1,12 +1,8 @@
 // ?=====================>>>Elements===============================
 let pageContent = document.getElementById("pageContent");
-
-//*==========================>>>>Variables==========================
-
-
-
 // !=========================>>>>PageLoad==========================
 featchMealsData();
+ 
 // ^=========================>>>function=========================== 
 function openSideMenu() {
     $(".sideMenu").animate({ "left": 0 }, 1000);
@@ -21,6 +17,7 @@ function closeSideMenu(offset) {
 async function featchMealsData() {
     const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=`);
     const data = await response.json();
+    // $(".load").hide();
     let cards = ` <div class="container cards">
     <div class="row">
    `;
@@ -42,7 +39,7 @@ $(".icon").click(function () {
     let leftOffset = $(".icon").offset().left;
     if (leftOffset == 0) {
         openSideMenu();
-        $(".menu").removeClass("d-none", 1000, "easeInBack");
+        $(".menu").removeClass("d-none", 1000);
     } else {
         closeSideMenu(leftOffset);
     }
@@ -51,7 +48,7 @@ $(".links ul li a").click(function () {
     closeSideMenu($(".icon").offset().left);
 
 });
-function loadPage(url, targetId) {
+function openPage(url, targetId) {
     pageContent.innerHTML = ""
     $.ajax({
         url: url,

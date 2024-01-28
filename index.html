@@ -26,8 +26,19 @@
     <link rel="stylesheet" href="Css/style.css" />
 
     <!-- ======================================================================= -->
-  </head>
-  <body>
+  </head>    
+  <!-- <div class="load d-flex justify-content-center align-items-center">
+     <div class="sk-chase">
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+  </div> 
+  </div> -->
+  <body class="d-flex">
+ 
     <!-- ~===================>>>>>>>>>Main================================== -->
     <div class="master">
       <div class="masterSideMenu">
@@ -41,24 +52,32 @@
                   <li>
                     <a
                       href="#"
-                      onclick="loadPage('./Pages/Search.html', 'pageContent')"
+                      onclick="openPage('./Pages/Search.html', 'pageContent')"
                       >Search</a
                     >
                   </li>
 
                   <li>
                     <a
-                      onclick="loadPage('./Pages/Categories.html', 'pageContent')"
+                      onclick="openPage('./Pages/Categories.html', 'pageContent')"
                       >Categories</a
                     >
                   </li>
                   <li> <a
-                    onclick="loadPage('./Pages/Area.html', 'pageContent')"
+                    onclick="openPage('./Pages/Area.html', 'pageContent')"
                     >Area</a
                   ></li>
-                  <li>Ingredients</li>
-                  <li>Contact Us</li>
-                </ul>
+                  <li>
+                    <a
+                    onclick="openPage('./Pages/Ingredients.html', 'pageContent')"
+                    > Ingredients</a
+                    </li>
+                    <li>
+                      <a
+                      onclick="openPage('./Pages/Contact.html', 'pageContent')"
+                      > Contact Us</a>
+                      </li>           
+                           </ul>
                 <div class="mainFooter">
                   <div class="footericon">
                     <i class="fa-brands fa-facebook"></i>
