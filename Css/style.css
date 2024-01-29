@@ -219,3 +219,14 @@ h3 {
     transform: scale(1);
   }
 }
+#mealImg{
+  height: 400px;
+  width: 400px;
+}
+.strIngredient li{
+  font-size: 15px;
+  padding: 10px;
+  color:black;
+  background-color: rgb(229, 248, 248);
+  border-radius: 10px;
+}
